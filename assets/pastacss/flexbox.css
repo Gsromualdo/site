@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container { 
+    display: flex;
+    justify-content: flex-start; /*eixo principal*/
+    flex-wrap: wrap;
+    align-items: flex-start; /*eixo perpendicular*/
+    align-content: space-between;
+    background: yellow;
+    height: 640px;
+    width: 960px;
+}
+.flex-item { /* se comportam de acordo com o flex-container*/
+    width: 33.33%;
+    color: #fff;
+    background: red;
+    
+}

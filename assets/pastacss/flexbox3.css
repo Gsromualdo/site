@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 24px;
+}
+ p {
+    margin: 0 0 24px;
+ }
+
+.two-collums {
+    display: flex;
+}
+.two-collums .col { 
+    display: flex;
+    background: lawngreen;
+    margin: 15px;
+    padding: 30px;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .imagem {
+    width: 100%;
+    height: 50px;
+    background: blue;
+}

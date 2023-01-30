@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+.grid {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.grid::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+.grid .col {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: red;
+    box-shadow: 0 0 5px 5px blue; /*colocar sombra nos objetos*/
+}
+/*Juncao de tudo oq vimos ate o momento*/
+.menu {
+    width: 100%;
+    position: fixed;
+    background: black;
+}
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+}
+.menu ul li {
+   float: left;
+}
+.menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+ }
+ .menu ul li a:hover {
+    background: #333;
+ }
+ .full-page { /*mexe na pagina principal,definindo largura,tamanho,espaco entre o topo,cor,*/
+    max-width: 1200px;
+    padding-top: 73px;
+    height: 100vh;
+    background: turquoise;
+}
+.full-page-content { /*conteudo da full-page*/ 
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+/*Juncao de tudo oq vimos ate o momento*/
+
+@media all and (max-width:568px)  {  /*para dispositivos mobile*/  /*deixa com uma coluna*/
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:569px) and (max-width:768px) {  /*para dispositivos mobile*/
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width:769px) and (max-width:1200px) {  /*para dispositivos mobile*/ /*computador acima*/
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media all and (min-width:1200px)  {  /*para dispositivos mobile*/
+    .grid .col {
+        width: 25%;
+    }
+}
